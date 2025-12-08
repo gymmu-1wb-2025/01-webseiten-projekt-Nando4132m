@@ -1,12 +1,11 @@
-let counter = 0;
+console.log("Meine Website");
 
+let counter = 0;
 function createNewElement() {
-  let newElement = document.createElement("p");
+  letNewElement = document.createElement("h1");
 
   counter = counter + 1;
-
-  newElement.textContent = "Element " + counter;
-
-  let mainElement = document.querySelector("main");
-  mainElement.appendChild(newElement);
+  newElement.textContent = "Element" + "counter";
+  let mainElement = document.querySelector("header");
+  titleElement.textContent = count;
 }
