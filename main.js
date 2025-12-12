@@ -8,10 +8,9 @@ function createNewElement() {
   titleElement.textContent = count;
 }
 
-var operand1 = parseInt(document.getElementById("operand1").value);
 function calculate() {
-  var operand1 = parseInt(document.getElementById("operand").value);
-  var operand2 = parseInt(document.getElementById("operand").value);
+  var operand1 = parseInt(document.getElementById("operand1").value);
+  var operand2 = parseInt(document.getElementById("operand2").value);
   var result = 0;
   switch (document.getElementById("operator").value) {
     case "plus":

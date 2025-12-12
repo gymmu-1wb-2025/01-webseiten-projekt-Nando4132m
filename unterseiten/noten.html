@@ -29,7 +29,19 @@
       </ul>
     </nav>
     <main style="grid-area: main;">
-      <section></section>
+      <section>
+        <input type="number" id="operand1">
+        <select id="operator">
+          <option value="plus">+</option>
+          <option value="minus">-</option>
+          <option value="devide">/</option>
+          <option value="multiply">*</option>
+        </select>
+        <input type="number" id="operand2">
+        <button onclick="return calculate();">Calculate</button>
+        <br>
+        <p id="result">Please, type in your values.</p>
+      </section>
     </main>
     <footer style="grid-area: footer">Noten</footer>
   </body>
