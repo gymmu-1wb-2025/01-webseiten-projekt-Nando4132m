@@ -29,5 +29,5 @@ function calculate() {
       result = operand1 + operand2;
       break;
   }
-  document.getElementById("result").value = currentInput;
+  document.getElementById("result").textContent = result;
 }

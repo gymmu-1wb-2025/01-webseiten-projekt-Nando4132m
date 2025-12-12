@@ -30,25 +30,20 @@
     </nav>
     <main style="grid-area: main;">
       <section>
-        <div class="container">
-          <div class="calculator">
-            <div class="output">
-              <pre id="lower">0</pre>
-            </div>
-            <div class="input"></div>
-          </div>
+        <div class="calculater">
+          <p id="result">Bitte schreiben Sie ihre Rechnung herein.</p>
+          <input type="number" id="operand1">
+          <select id="operator">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="divide">/</option>
+            <option value="multiply">*</option>
+          </select>
+          <input type="number" id="operand2">
+          <button onclick="calculate();">Calculate</button>
+          <br>
+          <br>
         </div>
-        <p id="result">Bitte schreiben Sie ihre Rechnung herein.</p>
-        <input type="number" id="operand1">
-        <select id="operator">
-          <option value="plus">+</option>
-          <option value="minus">-</option>
-          <option value="devide">/</option>
-          <option value="multiply">*</option>
-        </select>
-        <input type="number" id="operand2">
-        <button onclick="return calculate();">Calculate</button>
-        <br>
       </section>
     </main>
     <footer style="grid-area: footer">Noten</footer>

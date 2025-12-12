@@ -35,3 +35,15 @@ footer {
   font-family: monospace;
   padding-block: 1em;
 }
+
+input,
+select {
+  font-size: 18px;
+  padding: 8px;
+  margin: 5px;
+}
+#result {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
