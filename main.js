@@ -9,7 +9,6 @@ function createNewElement() {
 }
 
 var operand1 = parseInt(document.getElementById("operand1").value);
-
 function calculate() {
   var operand1 = parseInt(document.getElementById("operand").value);
   var operand2 = parseInt(document.getElementById("operand").value);
