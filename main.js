@@ -9,8 +9,8 @@ function createNewElement() {
 }
 
 function calculate() {
-  var operand1 = parseInt(document.getElementById("operand1").value);
-  var operand2 = parseInt(document.getElementById("operand2").value);
+  var operand1 = parseFloat(document.getElementById("operand1").value);
+  var operand2 = parseFloat(document.getElementById("operand2").value);
   var result = 0;
   switch (document.getElementById("operator").value) {
     case "plus":
@@ -19,7 +19,7 @@ function calculate() {
     case "minus":
       result = operand1 - operand2;
       break;
-    case "devide":
+    case "divide":
       result = operand1 / operand2;
       break;
     case "multiply":
