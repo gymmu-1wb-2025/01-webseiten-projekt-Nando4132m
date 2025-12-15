@@ -42,3 +42,7 @@ select {
   padding: 8px;
   margin: 5px;
 }
+
+section {
+  min-height: 100%;
+}
