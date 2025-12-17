@@ -53,3 +53,7 @@ select {
 section {
   min-height: 100%;
 }
+
+fieldset {
+  max-width: 23%;
+}
