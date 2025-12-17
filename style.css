@@ -54,6 +54,7 @@ section {
   min-height: 100%;
 }
 
+/*Fieldset grösse verringert.*/
 fieldset {
   max-width: 23%;
 }
