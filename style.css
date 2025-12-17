@@ -51,7 +51,7 @@ select {
 
 /*Section grössen definieren.*/
 section {
-  min-height: 100%;
+  min-height: 35%;
 }
 
 /*Fieldset grösse verringert.*/
