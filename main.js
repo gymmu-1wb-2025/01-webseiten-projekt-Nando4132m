@@ -1,3 +1,4 @@
+/* Counter auf der Startseite im header, mit button: onclick*/
 let counter = 0;
 function createNewElement() {
   let newElement = document.querySelector("h1");
@@ -8,6 +9,7 @@ function createNewElement() {
   titleElement.textContent = count;
 }
 
+/* Taschenrechner mit der Hilfe vom Javascript gemacht. Benutztung von zweit leisten(operand 1 und operand 2). Dann parseFloat, damit man mit dezimalzahlen rechnen kann. Unten dann auswälen zwischen *,+,- und /. Dann definition, wie man resultat berechnet.*/
 function calculate() {
   var operand1 = parseFloat(document.getElementById("operand1").value);
   var operand2 = parseFloat(document.getElementById("operand2").value);
