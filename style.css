@@ -1,3 +1,4 @@
+/* Aufbau der Webseite definieren, wo Header, Aside, Main, Footer. Grössen.*/
 .grid-wrapper {
   display: grid;
   height: 100dvh;
@@ -16,11 +17,14 @@ body {
   box-sizing: border-box;
 }
 
+/* Header schön darstellen. Farbe und Ort definieren. */
 header {
   background-color: antiquewhite;
   text-align: center;
   font-family: monospace;
 }
+
+/* Main definieren, Farbe und Ort. Schöner darstellen. */
 main {
   background-color: rgb(212, 211, 211);
   text-align: left;
@@ -29,6 +33,7 @@ main {
   padding: 2rem;
 }
 
+/* Footer definieren, Farbe und Ort. Schöner darstellen. */
 footer {
   background-color: antiquewhite;
   text-align: center;
@@ -36,6 +41,7 @@ footer {
   padding-block: 1em;
 }
 
+/* Input und Select verschönern von den Javascript teilen.*/
 input,
 select {
   font-size: 18px;
@@ -43,6 +49,7 @@ select {
   margin: 5px;
 }
 
+/*Section grössen definieren.*/
 section {
   min-height: 100%;
 }
