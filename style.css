@@ -24,12 +24,12 @@ header {
   text-align: center;
   font-family: monospace;
 }
-
+/*Definition der Hintergrundfarbe im aside. Schriftfarbe. */
 aside {
   color: white;
-  background-color: blueviolet;
+  background-color: rgb(23, 23, 77);
 }
-/* Main definieren, Farbe und Ort. Schöner darstellen. Auch Bild eingefügt.*/
+/* Main definieren, Farbe und Ort des Textes. Schöner darstellen. Auch Bild eingefügt.*/
 main {
   color: white;
   text-align: left;
@@ -67,4 +67,14 @@ section {
 /*Fieldset grösse verringert.*/
 fieldset {
   max-width: 23%;
+}
+
+/*farbe des Links wenn er noch nicht angeklickt wurde.*/
+a:link {
+  color: red;
+}
+
+/*farbe des Links wenn angeklickt.*/
+a:visited {
+  color: orange;
 }
