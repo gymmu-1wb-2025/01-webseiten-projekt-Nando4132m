@@ -4,63 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
-
+    <!--wird dem CSS zugeordnet, damit schlussendlich die grid-wrapper funktionieren.-->
     <link rel="stylesheet" href="../style.css">
   </head>
+  <!--body der class grid-wrapper zuordnen.-->
   <body class="grid-wrapper">
-    <!-- -->
+    <!--header zum style grid-area: header zordnen, bedeutet das der header ganz oben die ganze Zeile bekommt. -->
     <header style="grid-area: header">
+      <!--Haupttitel-->
       <h1>Meine Hobbies</h1>
     </header>
 
-    <!-- DAs ist due navigationsleiste-->
+    <!--Aside zu der grid area aside zuornen, damit ein Teil der linken seite nur für aside genutzt werden kann.-->
     <aside>
+      <!--Navigationsleiste in aside.-->
       <nav style="grid-area: aside">
+        <!--Navigationsleiste um zwischen den Unterseiten/ Hauptseite hin und her zu wechseln.-->
         <ul class="navigation">
+          <!--Einzelnens Teil, der Link für die Hauptseite.-->
           <li>
             <a href="/index.html">Start</a>
           </li>
+          <!--Link für andere Unterseite.-->
           <li>
             <a href="./übermich.html">Über mich</a>
           </li>
-
+          <!--Link für andere Unterseite.-->
           <li class="nav-item">
             <a href="./freizeitbeschäftigungen.html">Freizeitbeschäftigungen</a>
           </li>
+          <!--Link für andere Unterseite.-->
           <li>
             <a href="./noten.html">Noten</a>
           </li>
         </ul>
       </nav>
+      <!--Navigationsleiste, damit auf der Unterseite/ Hauptseite selbst hoch und runter springen kann.-->
       <nav>
         <ul>
+          <!--Definiert denn Titel als= Sections-->
           <li>
             <h2>Sections</h2>
           </li>
           <li class="nav-item">
             <a href="#sport">Sport</a>
           </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
           <li class="nav-item">
             <a href="#sportarten">Sportarten</a>
           </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
           <li class="nav-item">
             <a href="#genaueres">Genaueres</a>
           </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
           <li class="nav-item">
             <a href="#trainings">Trainings</a>
           </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
           <li class="nav-item">
             <a href="#regeneration">Regeneration</a>
           </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
           <li class="nav-item">
             <a href="#links">Links</a>
           </li>
         </ul>
       </nav>
     </aside>
+    <!--main wird damit zur grid-area: main zugeordnet. -->
     <main style="grid-area: main">
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
       <section id="sport">
+        <!--Untertitel-->
         <h2>Sport:</h2>
+        <!--Text-->
         <p>
           Sport ist wichtig für Kinder und Erwachsene. Beim Sport bewegt man
           sich viel und hält seinen Körper gesund und fit. Man kann rennen,
@@ -68,26 +86,32 @@
           nicht nur stark, sondern auch glücklich, weil man dabei Spaß hat und
           Stress abbauen kann. Außerdem lernt man beim Sport, fair zu sein,
           Regeln einzuhalten und als Team zusammenzuarbeiten. Egal ob Fußball,
-          Turnen, Schwimmen oder einfach draußen spielen – Sport tut gut und
+          Turnen, Schwimmen oder einfach draußen spielen. Sport tut gut und
           macht Freude.
         </p>
       </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
       <section id="sportarten">
+        <!--Untertitel-->
         <h3>
           In meiner Freizeit übe ich gerne diese Sportarten aus um fit zu
           bleiben:
         </h3>
+        <!--Liste für Lieblingssportarten.-->
         <ul>
           <li>Basketball</li>
           <li>Krafttraining</li>
           <li>Laufen</li>
         </ul>
       </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
       <section id="genaueres">
+        <!--Untertitel-->
         <h3>
           Ich werde Ihnen jetzt hier noch genaueres über meine
           Lieblingssportarten beibringen:
         </h3>
+        <!--Text-->
         <p>
           Meine absolute Lieblingssportart ist definitiv Basketball. Ich habe
           sogar fünfmal pro Woche Training, was nur geht, weil ich in einem
@@ -102,8 +126,11 @@
           werden, egal ob beim Werfen, Dribbeln oder in der Verteidigung.
         </p>
       </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
       <section id="trainings">
+        <!--Untertitel-->
         <h3>Wie teile ich mir die Trainings ein?</h3>
+        <!--Text-->
         <p>
           Ich gehe einmal pro Woche in Muttenz ins Training, die anderen vier
           Mal trainiere ich beim BBU, weil man dort ein gewisses Commitment
@@ -116,8 +143,11 @@
           Trainingseinheiten durchzuhalten und immer besser zu werden.
         </p>
       </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
       <section id="regeneration">
+        <!--Untertitel-->
         <h3>Wie regeneriere ich mich?</h3>
+        <!--Text-->
         <p>
           Ich regeneriere mich vor allem über Schlaf, eine ausgewogene
           Ernährung, Regenerationsläufe und die Normatec Lower Leg Boots Schlaf
@@ -139,11 +169,14 @@
           Training schneller erholt und bin bereit für die nächste Einheit.
         </p>
       </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
       <section id="links">
+        <!--Untertitel-->
         <h3>
           Hier unten finden Sie Links zu den verschiedenen Teams/ regenerations
           Arten:
         </h3>
+        <!--Liste mit externen Links welche auf die oben stehenden Texte bezogen sind.-->
         <ul>
           <li>
             <a href="https://www.basel-basket-united.ch/">BaselBasketUnited</a>
@@ -159,6 +192,7 @@
         </ul>
       </section>
     </main>
+    <!--footer wird zur grid-area: footer zugeordnet, damit die ganze untere leiste nur footer ist und nicht mit main, etc. vermischt wird.-->
     <footer style="grid-area: footer">Meine Hobbies</footer>
   </body>
 </html>

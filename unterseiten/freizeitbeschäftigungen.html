@@ -4,48 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freizeitbeschäftigungen</title>
-
+    <!--wird dem CSS zugeordnet, damit schlussendlich die grid-wrapper funktionieren.-->
     <link rel="stylesheet" href="../style.css">
   </head>
+  <!--body der class grid-wrapper zuordnen.-->
   <body class="grid-wrapper">
+    <!--header zum style grid-area: header zordnen, bedeutet das der header ganz oben die ganze Zeile bekommt. -->
     <header style="grid-area: header;">
+      <!--Haupttitel-->
       <h1>Meine Freizeitbeschäftigungen</h1>
     </header>
-    <aside>
+    <!--Aside zu der grid area aside zuornen, damit ein Teil der linken seite nur für aside genutzt werden kann.-->
+    <aside style="grid-area: aside;">
+      <!--Navigationsleiste in aside.-->
       <nav style="grid-area: aside">
+        <!--Navigationsleiste um zwischen den Unterseiten/ Hauptseite hin und her zu wechseln.-->
         <ul class="navigation">
+          <!--Einzelnens Teil, der Link für die Hauptseite.-->
           <li>
             <a href="/index.html">Start</a>
           </li>
+          <!--Link für andere Unterseite.-->
           <li>
             <a href="./übermich.html">Über mich</a>
           </li>
-
+          <!--Link für andere Unterseite.-->
           <li class="nav-item">
             <a href="./hobbies.html">Hobbies</a>
           </li>
+          <!--Link für andere Unterseite.-->
           <li>
             <a href="./noten.html">Noten</a>
           </li>
         </ul>
       </nav>
+      <!--Navigationsleiste, damit auf der Unterseite/ Hauptseite selbst hoch und runter springen kann.-->
       <nav>
         <ul>
+          <!--Definiert denn Titel als= Sections-->
           <li>
             <h2>Sections</h2>
           </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
           <li class="nav-item">
             <a href="#freunde">Freunde</a>
           </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
           <li class="nav-item">
             <a href="#freundin">Freundin</a>
           </li>
         </ul>
       </nav>
     </aside>
+    <!--main wird damit zur grid-area: main zugeordnet. -->
     <main style="grid-area: main;">
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
       <section id="freunde">
+        <!--Untertitel-->
         <h2>Meine Freunde</h2>
+        <!--Text-->
         <p>
           Ich verbringe viel Zeit mit meinen Freunden. Meistens am Wochenende
           gegen den Abend, da ich unter der Woche fast keine zeit habe.Tolle
@@ -68,8 +85,11 @@
           akzeptieren, wie ich bin, und immer hinter mir stehen.
         </p>
       </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
       <section id="freundin">
+        <!--Untertitel-->
         <h2>Freundin</h2>
+        <!--Text-->
         <p>
           Meine feste Freundin ist für mich etwas ganz Besonderes. Mit ihr fühle
           ich mich einfach wohl und verstanden. Wir verbringen viel Zeit
@@ -88,6 +108,7 @@
         </p>
       </section>
     </main>
+    <!--footer wird zur grid-area: footer zugeordnet, damit die ganze untere leiste nur footer ist und nicht mit main, etc. vermischt wird.-->
     <footer style="grid-area: footer">Meine Freizeitbeschäftigungen</footer>
   </body>
 </html>
