@@ -19,23 +19,33 @@ body {
 
 /* Header schön darstellen. Farbe und Ort definieren. */
 header {
-  background-color: antiquewhite;
+  color: antiquewhite;
+  background-color: rgb(17, 17, 54);
   text-align: center;
   font-family: monospace;
 }
 
-/* Main definieren, Farbe und Ort. Schöner darstellen. */
+aside {
+  color: white;
+  background-color: blueviolet;
+}
+/* Main definieren, Farbe und Ort. Schöner darstellen. Auch Bild eingefügt.*/
 main {
-  background-color: rgb(212, 211, 211);
+  color: white;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   overflow-y: scroll;
   padding: 2rem;
+  background-image: url(https://img.freepik.com/vektoren-premium/abstrakter-blauer-hintergrund-mit-linien_1109882-8541.jpg?semt=ais_hybrid);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Footer definieren, Farbe und Ort. Schöner darstellen. */
 footer {
-  background-color: antiquewhite;
+  color: white;
+  background-color: rgb(17, 17, 54);
   text-align: center;
   font-family: monospace;
   padding-block: 1em;
