@@ -69,12 +69,13 @@ fieldset {
   max-width: 23%;
 }
 
-/*farbe des Links wenn er noch nicht angeklickt wurde.*/
-a:link {
-  color: red;
-}
-
-/*farbe des Links wenn angeklickt.*/
+/*farbe des links.*/
 a:visited {
   color: orange;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
