@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übermich</title>
+    <!--wird dem CSS zugeordnet, damit schlussendlich die grid-wrapper funktionieren.-->
+    <link rel="stylesheet" href="../style.css">
+    <!--wird dem main.js zugeordnet, damit das Javascript/ der Taschenrechner funkioniert auf der Website. -->
+    <script src="../main.js" defer></script>
+  </head>
+  <!--body der class grid-wrapper zuordnen.-->
+  <body class="grid-wrapper">
+    <!--header zum style grid-area: header zordnen, bedeutet das der header ganz oben die ganze Zeile bekommt. -->
+    <header style="grid-area: header;">
+      <!--Haupttitel-->
+      <h1>Noten</h1>
+    </header>
+    <!--Aside zu der grid area aside zuornen, damit ein Teil der linken seite nur für aside genutzt werden kann.-->
+    <aside>
+      <!--Navigationsleiste in aside.-->
+      <nav style="grid-area: aside">
+        <!--Navigationsleiste um zwischen den Unterseiten/ Hauptseite hin und her zu wechseln.-->
+        <ul class="navigation">
+          <!--Einzelnens Teil, der Link für die Hauptseite.-->
+          <li class="nav-item">
+            <!--Haus darstellen im SVG-->
+            <svg width="40px" viewBox="0 0 500 500">
+              <path
+                d="M 150 250 L 250 100 L 350 250 l -200 200 l 200 0 l 0 -200 l -200 0 l 0 200 l 200 0 Z"
+                stroke="#000000"
+                fill="red"
+                stroke-width="5"
+              />
+            </svg>
+            <a href="/index.html">Start</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <svg viewBox="0 0 24 24" class="icon" width="2rem">
+              <circle cx="12" cy="12" r="5"/>
+            </svg>
+            <a href="./übermich.html">Über mich</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <!--Zeichen um eine Hantel darzustellen-->
+            <svg viewBox="0 0 500 500" width="30px">
+              <rect x="-15" y="255" width="125" height="166" fill="red"/>
+
+              <rect x="360" y="255" width="125" height="166" fill="red"/>
+
+              <rect x="110" y="320" width="250" height="41" fill="black"/>
+            </svg>
+            <a href="./hobbies.html">Hobbies</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <!--Pfeil darstellen im SVG-->
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+
+              <line
+                x1="350"
+                y1="200"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+              <line
+                x1="350"
+                y1="300"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="./freizeitbeschäftigungen.html">Freizeitbeschäftigungen</a>
+          </li>
+        </ul>
+      </nav>
+      <!--Navigationsleiste, damit auf der Unterseite/ Hauptseite selbst hoch und runter springen kann.-->
+      <nav>
+        <ul>
+          <!--Definiert denn Titel als= Sections-->
+          <ol>
+            <h2>Sections</h2>
+          </ol>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#notensystem">Notensystem</a>
+          </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#berechnen">Berechnung</a>
+          </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#calculater">Taschenrechner</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!--main wird damit zur grid-area: main zugeordnet. -->
+    <main style="grid-area: main;">
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="notensystem">
+        <!--Untertitel-->
+        <h2>Notensystem:</h2>
+        <!--Text-->
+        <p>
+          In der Schweiz bekommen Kinder in der Schule Noten von 1 bis 6. Dabei
+          ist die 6 die beste Note, die man erreichen kann, und die 1 die
+          schlechteste. Wenn ein Kind eine 4 oder mehr bekommt, dann hat es die
+          Aufgabe, den Test oder die Prüfung bestanden. Eine Note unter 4
+          bedeutet, dass es leider noch nicht gereicht hat.
+        </p>
+        <!--Text-->
+        <p>
+          Eine 6 zeigt, dass ein Kind etwas sehr, sehr gut gemacht hat und den
+          Stoff richtig gut verstanden hat. Eine 5 oder 5.5 bedeutet, dass die
+          Leistung gut war. Eine 4 heißt, dass es gerade noch gereicht hat und
+          die wichtigsten Dinge verstanden wurden. Ist die Note tiefer als 4,
+          muss man meistens noch mehr üben, den Stoff wiederholen oder eine
+          Prüfung noch einmal machen.
+        </p>
+        <!--Text-->
+        <p>
+          Damit Lehrer die Leistungen ganz genau beurteilen können, gibt es
+          nicht nur ganze Noten, sondern auch Zwischennoten. Sehr oft werden
+          Halbnoten wie 4.5 oder 5.5 verwendet. Manchmal gibt es sogar
+          Zehntelnoten, zum Beispiel 4.2 oder 5.8. So kann man genau sehen, ob
+          eine Leistung knapp genügend war oder fast eine bessere Note erreicht
+          hätte.
+        </p>
+        <!--Text-->
+        <p>
+          In der Schule zählt oft nicht nur eine einzelne Note. Meistens bekommt
+          man in einem Fach mehrere Noten, zum Beispiel für Tests, Hausaufgaben
+          oder Vorträge. Am Schluss wird daraus ein Notendurchschnitt berechnet.
+          Dieser Durchschnitt zeigt, wie gut man über eine längere Zeit
+          gearbeitet hat. Manchmal zählen gewisse Fächer oder Prüfungen mehr als
+          andere, weil sie besonders wichtig sind.
+        </p>
+        <!--Text-->
+        <p>
+          Die Noten helfen den Lehrern, den Eltern und den Kindern selbst zu
+          sehen, was schon gut klappt und wo man noch üben muss. Sie sollen
+          nicht nur bewerten, sondern auch dabei helfen, immer ein bisschen
+          besser zu werden.
+        </p>
+      </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="berechnen">
+        <!--Untertitel-->
+        <h2>Berechnung der Noten:</h2>
+        <!--Text-->
+        <p>
+          Um einen Notendurchschnitt zu berechnen, zählt man zuerst alle Noten
+          zusammen und teilt die Summe durch die Anzahl der Noten.
+        </p>
+        <!--Text-->
+        <p>Ein einfaches Beispiel:</p>
+        <!--Text-->
+        <p>Du hast die Noten 5.0, 4.5 und 5.5.</p>
+        <!--Text-->
+        <p>Zuerst rechnest du: 5.0 + 4.5 + 5.5 = 15.0</p>
+        <!--Text-->
+        <p>Dann teilst du durch 3 (weil es drei Noten sind):</p>
+        <!--Text-->
+        <p>15.0 ÷ 3 = 5.0</p>
+        <!--Text-->
+        <p>Dein Notendurchschnitt ist also 5.0.</p>
+        <!--Text-->
+        <p>
+          Manchmal zählen nicht alle Fächer gleich viel. Dann gibt es sogenannte
+          gewichtete Durchschnitte. Das heißt, wichtige Fächer zählen mehr.
+        </p>
+        <!--Text-->
+        <p>Zum Beispiel zählt Mathematik doppelt (Sekundarstuffe 1).</p>
+        <!--Text-->
+        <p>
+          Dann rechnet man die Mathenote zweimal und zählt danach alles
+          zusammen. Anschließend teilt man durch die gesamt Anzahl der
+          Zählungen.
+        </p>
+        <!--Text-->
+        <p>Beispiel:</p>
+        <!--Text-->
+        <p>Mathe 5.0 (zählt doppelt), Deutsch 4.5, Englisch 5.5</p>
+        <!--Text-->
+        <p>Rechnung: 5.0 + 5.0 + 4.5 + 5.5 = 20.0</p>
+        <!--Text-->
+        <p>Jetzt teilt man durch 4:</p>
+        <!--Text-->
+        <p>20.0 ÷ 4 = 5.0</p>
+        <!--Text-->
+        <p>
+          Oft wird der Durchschnitt am Schluss noch gerundet, zum Beispiel auf
+          eine Zehntel- oder Halbnote, je nach Schulregel.
+        </p>
+      </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="calculater">
+        <!--Untertitel-->
+        <h2>Taschenrechner:</h2>
+        <div class="calculater">
+          <!--Text-->
+          <p>Bitte schreiben Sie ihre Rechnung herein.</p>
+          <input type="number" id="operand1">
+          <select id="operator">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="divide">/</option>
+            <option value="multiply">*</option>
+          </select>
+          <input type="number" id="operand2">
+          <button onclick="calculate();">Calculate</button>
+          <!--Untertitel-->
+          <h3>Ergebnis:</h3>
+          <fieldset id="result"></fieldset>
+          <br>
+          <br>
+        </div>
+      </section>
+      <!--Bild link, der mit CSS verbunden ist, dmit ein bild im Hintergrund sein kann.-->
+      <section>
+        <img
+          scr="https://www.bing.com/images/search?view=detailV2&ccid=zdzi2gHL&id=07F52384A1DB5C796D4094A3F4357805E387A0A0&thid=OIP.zdzi2gHLt49qYHYXyWI-IwHaE7&mediaurl=https%3a%2f%2fcdn.pixabay.com%2fphoto%2f2022%2f11%2f22%2f20%2f25%2fball-7610545_1280.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.cddce2da01cbb78f6a607617c9623e23%3frik%3doKCH4wV4NfSjlA%26pid%3dImgRaw%26r%3d0&exph=853&expw=1280&q=basketball&FORM=IRPRST&ck=8C19D5E76157FFC6674A7573029E5E09&selectedIndex=1&itb=0"
+          alt=""
+          width="100%"
+        >
+      </section>
+    </main>
+    <!--footer wird zur grid-area: footer zugeordnet, damit die ganze untere leiste nur footer ist und nicht mit main, etc. vermischt wird.-->
+    <footer style="grid-area: footer">Noten</footer>
+  </body>
+</html>

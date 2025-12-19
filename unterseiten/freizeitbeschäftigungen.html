@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freizeitbeschäftigungen</title>
+    <!--wird dem CSS zugeordnet, damit schlussendlich die grid-wrapper funktionieren.-->
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <!--body der class grid-wrapper zuordnen.-->
+  <body class="grid-wrapper">
+    <!--header zum style grid-area: header zordnen, bedeutet das der header ganz oben die ganze Zeile bekommt. -->
+    <header style="grid-area: header;">
+      <!--Haupttitel-->
+      <h1>Meine Freizeitbeschäftigungen</h1>
+    </header>
+    <!--Aside zu der grid area aside zuornen, damit ein Teil der linken seite nur für aside genutzt werden kann.-->
+    <aside style="grid-area: aside;">
+      <!--Navigationsleiste in aside.-->
+      <nav style="grid-area: aside">
+        <!--Navigationsleiste um zwischen den Unterseiten/ Hauptseite hin und her zu wechseln.-->
+        <ul class="navigation">
+          <!--Einzelnens Teil, der Link für die Hauptseite.-->
+          <li class="nav-item">
+            <!--Haus darstellen im SVG-->
+            <svg width="40px" viewBox="0 0 500 500">
+              <path
+                d="M 150 250 L 250 100 L 350 250 l -200 200 l 200 0 l 0 -200 l -200 0 l 0 200 l 200 0 Z"
+                stroke="#000000"
+                fill="red"
+                stroke-width="5"
+              />
+            </svg>
+            <a href="/index.html">Start</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <svg viewBox="0 0 24 24" class="icon" width="2rem">
+              <circle cx="12" cy="12" r="5"/>
+            </svg>
+            <a href="./übermich.html">Über mich</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <!--Zeichen um eine Hantel darzustellen-->
+            <svg viewBox="0 0 500 500" width="30px">
+              <rect x="-15" y="255" width="125" height="166" fill="red"/>
+
+              <rect x="360" y="255" width="125" height="166" fill="red"/>
+
+              <rect x="110" y="320" width="250" height="41" fill="black"/>
+            </svg>
+            <a href="./hobbies.html">Hobbies</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <b>6</b>
+            <a href="./noten.html">Noten</a>
+          </li>
+        </ul>
+      </nav>
+      <!--Navigationsleiste, damit auf der Unterseite/ Hauptseite selbst hoch und runter springen kann.-->
+      <nav>
+        <ul>
+          <!--Definiert denn Titel als= Sections-->
+          <ol>
+            <h2>Sections</h2>
+          </ol>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#freunde">Freunde</a>
+          </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#freundin">Freundin</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!--main wird damit zur grid-area: main zugeordnet. -->
+    <main style="grid-area: main;">
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="freunde">
+        <!--Untertitel-->
+        <h2>Meine Freunde</h2>
+        <!--Text-->
+        <p>
+          Ich verbringe viel Zeit mit meinen Freunden. Meistens am Wochenende
+          gegen den Abend, da ich unter der Woche fast keine zeit habe.Tolle
+          Freunde sind für mich einfach etwas Besonderes. Sie sind immer für
+          mich da, egal, ob ich gerade feiere oder eine schwere Zeit habe. Mit
+          ihnen kann ich lachen, bis mir der Bauch weh tut, und über die
+          verrücktesten Sachen quatschen. Zum Beispiel sitzen wir manchmal
+          stundenlang zusammen und erzählen uns die lustigsten Geschichten aus
+          der Schule oder vom Training. Sie kennen mich oft so gut, dass sie
+          merken, wie ich mich fühle, noch bevor ich es selbst richtig checke.
+          Tolle Freunde motivieren mich und unterstützen mich. Wenn ich mal
+          unsicher bin oder etwas Neues ausprobieren möchte, feuern sie mich an
+          und helfen mir, dranzubleiben. Sie freuen sich mit mir über Erfolge,
+          zum Beispiel wenn ich im Basketball ein gutes Spiel hatte, und helfen
+          mir, wenn mal etwas nicht klappt. Mit ihnen macht sogar der
+          langweiligste Tag Spaß, und ich fühle mich nie alleine. Sie bringen
+          mich zum Lachen, auch wenn ich eigentlich gar keinen Grund dazu habe,
+          und ich kann einfach ich selbst sein, ohne mich zu verstellen. Es ist
+          ein richtig gutes Gefühl zu wissen, dass es Menschen gibt, die mich so
+          akzeptieren, wie ich bin, und immer hinter mir stehen.
+        </p>
+      </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="freundin">
+        <!--Untertitel-->
+        <h2>Freundin</h2>
+        <!--Text-->
+        <p>
+          Meine feste Freundin ist für mich etwas ganz Besonderes. Mit ihr fühle
+          ich mich einfach wohl und verstanden. Wir verbringen viel Zeit
+          miteinander, lachen zusammen und unternehmen die unterschiedlichsten
+          Dinge, egal ob wir einfach nur chillen, spazieren gehen oder etwas
+          Neues ausprobieren. Sie kennt mich oft besser, als ich mich selbst,
+          und unterstützt mich, wenn ich unsicher bin oder mal einen schlechten
+          Tag habe. Ich kann mit ihr über alles reden, von kleinen Alltagsdingen
+          bis hin zu großen Sorgen, und ich weiß, dass sie immer zuhört. Sie
+          bringt mich zum Lachen, macht mir gute Laune, selbst wenn ich
+          gestresst bin, und ich kann einfach ich selbst sein, ohne mich zu
+          verstellen. Es ist ein richtig gutes Gefühl zu wissen, dass es
+          jemanden gibt, der mich so akzeptiert, wie ich bin, und der immer
+          hinter mir steht. Ich schätze unsere gemeinsamen Momente sehr und
+          freue mich auf alles, was wir noch zusammen erleben werden.
+        </p>
+      </section>
+      <!--Bild link, der mit CSS verbunden ist, dmit ein bild im Hintergrund sein kann.-->
+      <section>
+        <img
+          scr="https://www.bing.com/images/search?view=detailV2&ccid=zdzi2gHL&id=07F52384A1DB5C796D4094A3F4357805E387A0A0&thid=OIP.zdzi2gHLt49qYHYXyWI-IwHaE7&mediaurl=https%3a%2f%2fcdn.pixabay.com%2fphoto%2f2022%2f11%2f22%2f20%2f25%2fball-7610545_1280.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.cddce2da01cbb78f6a607617c9623e23%3frik%3doKCH4wV4NfSjlA%26pid%3dImgRaw%26r%3d0&exph=853&expw=1280&q=basketball&FORM=IRPRST&ck=8C19D5E76157FFC6674A7573029E5E09&selectedIndex=1&itb=0"
+          alt=""
+          width="100%"
+        >
+      </section>
+    </main>
+    <!--footer wird zur grid-area: footer zugeordnet, damit die ganze untere leiste nur footer ist und nicht mit main, etc. vermischt wird.-->
+    <footer style="grid-area: footer">Meine Freizeitbeschäftigungen</footer>
+  </body>
+</html>

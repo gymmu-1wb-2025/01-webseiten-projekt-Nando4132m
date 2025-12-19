@@ -4,21 +4,305 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
+    <!--wird dem CSS zugeordnet, damit schlussendlich die grid-wrapper funktionieren.-->
+    <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
-    <header>
+  <!--body der class grid-wrapper zuordnen.-->
+  <body class="grid-wrapper">
+    <!--header zum style grid-area: header zordnen, bedeutet das der header ganz oben die ganze Zeile bekommt. -->
+    <header style="grid-area: header">
+      <!--Haupttitel-->
       <h1>Meine Hobbies</h1>
     </header>
 
-    <main>
-      <section>
-        <h2>Sport</h2>
-        <p>Diese Sportarten mache ich gerne</p>
+    <!--Aside zu der grid area aside zuornen, damit ein Teil der linken seite nur für aside genutzt werden kann.-->
+    <aside>
+      <!--Navigationsleiste in aside.-->
+      <nav style="grid-area: aside">
+        <!--Navigationsleiste um zwischen den Unterseiten/ Hauptseite hin und her zu wechseln.-->
+        <ul class="navigation">
+          <!--Einzelnens Teil, der Link für die Hauptseite.-->
+          <li class="nav-item">
+            <!--Haus darstellen im SVG-->
+            <svg width="40px" viewBox="0 0 500 500">
+              <path
+                d="M 150 250 L 250 100 L 350 250 l -200 200 l 200 0 l 0 -200 l -200 0 l 0 200 l 200 0 Z"
+                stroke="#000000"
+                fill="red"
+                stroke-width="5"
+              />
+            </svg>
+            <a href="/index.html">Start</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <!--Kreis erstellen.-->
+            <svg viewBox="0 0 24 24" class="icon" width="2rem">
+              <circle cx="12" cy="12" r="5"/>
+            </svg>
+            <a href="./übermich.html">Über mich</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <!--Pfeil darstellen im SVG-->
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+
+              <line
+                x1="350"
+                y1="200"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+              <line
+                x1="350"
+                y1="300"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="./freizeitbeschäftigungen.html">Freizeitbeschäftigungen</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <b>6</b>
+            <a href="./noten.html">Noten</a>
+          </li>
+        </ul>
+      </nav>
+      <!--Navigationsleiste, damit auf der Unterseite/ Hauptseite selbst hoch und runter springen kann.-->
+      <nav>
         <ul>
-          <li>Volleyball</li>
-          <li>Trailrunning</li>
+          <!--Definiert denn Titel als= Sections-->
+          <ol>
+            <h2>Sections</h2>
+          </ol>
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#sport">Sport</a>
+          </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#sportarten">Sportarten</a>
+          </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#genaueres">Genaueres</a>
+          </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#trainings">Trainings</a>
+          </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#regeneration">Regeneration</a>
+          </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#links">Links</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!--main wird damit zur grid-area: main zugeordnet. -->
+    <main style="grid-area: main">
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="sport">
+        <!--Untertitel-->
+        <h2>Sport:</h2>
+        <!--Text-->
+        <p>
+          Sport ist wichtig für Kinder und Erwachsene. Beim Sport bewegt man
+          sich viel und hält seinen Körper gesund und fit. Man kann rennen,
+          springen, spielen oder gemeinsam mit anderen trainieren. Sport macht
+          nicht nur stark, sondern auch glücklich, weil man dabei Spaß hat und
+          Stress abbauen kann. Außerdem lernt man beim Sport, fair zu sein,
+          Regeln einzuhalten und als Team zusammenzuarbeiten. Egal ob Fußball,
+          Turnen, Schwimmen oder einfach draußen spielen. Sport tut gut und
+          macht Freude.
+        </p>
+      </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="sportarten">
+        <!--Untertitel-->
+        <h3>
+          In meiner Freizeit übe ich gerne diese Sportarten aus um fit zu
+          bleiben:
+        </h3>
+        <!--Liste für Lieblingssportarten.-->
+        <ul>
+          <li>Basketball</li>
+          <li>Krafttraining</li>
+          <li>Laufen</li>
         </ul>
       </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="genaueres">
+        <!--Untertitel-->
+        <h3>
+          Ich werde Ihnen jetzt hier noch genaueres über meine
+          Lieblingssportarten beibringen:
+        </h3>
+        <!--Text-->
+        <p>
+          Meine absolute Lieblingssportart ist definitiv Basketball. Ich habe
+          sogar fünfmal pro Woche Training, was nur geht, weil ich in einem
+          Leistungszentrum spiele. Dieses Leistungszentrum heißt BBU
+          (BaselBasketUnited). Eigentlich hätte ich dort schon fünf
+          Trainingseinheiten pro Woche, aber weil ich auch gerne mit meinen
+          Freunden aus Muttenz Basketball spiele, trainiere ich zusätzlich noch
+          beim TV Muttenz Basketball. Neben dem ganzen Mannschaftstraining mache
+          ich auch zu Hause Krafttraining und gehe regelmäßig laufen, damit ich
+          die Kraft und Ausdauer habe, die ich für das viele Training brauche.
+          Basketball macht mir einfach riesig Spaß, und ich will immer besser
+          werden, egal ob beim Werfen, Dribbeln oder in der Verteidigung.
+        </p>
+      </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="trainings">
+        <!--Untertitel-->
+        <h3>Wie teile ich mir die Trainings ein?</h3>
+        <!--Text-->
+        <p>
+          Ich gehe einmal pro Woche in Muttenz ins Training, die anderen vier
+          Mal trainiere ich beim BBU, weil man dort ein gewisses Commitment
+          zeigen muss, um auch spielen zu können. Joggen mache ich am
+          Wochenende, an den Tagen, an denen ich kein Spiel habe. Krafttraining
+          übe ich eigentlich täglich, immer nur ein bisschen, um fit zu bleiben.
+          Wenn mal zufällig ein Training ausfällt, mache ich ein richtig
+          anstrengendes Krafttraining, weil ich mich sonst so fühle, als hätte
+          ich nichts geschafft. So bleibe ich auf dem nötigen Level, um alle
+          Trainingseinheiten durchzuhalten und immer besser zu werden.
+        </p>
+      </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="regeneration">
+        <!--Untertitel-->
+        <h3>Wie regeneriere ich mich?</h3>
+        <!--Text-->
+        <p>
+          Ich regeneriere mich vor allem über Schlaf, eine ausgewogene
+          Ernährung, Regenerationsläufe und die Normatec Lower Leg Boots Schlaf
+          ist für mich mega wichtig, weil ich darauf achten muss, dass ich genug
+          bekomme auch wenn das manchmal nicht so klappt Eine gute Ernährung
+          hilft mir auch total, weil man mit nur Süßem und ungesundem Essen
+          einfach nicht richtig fit wird und die Muskeln sich nicht erholen
+          Regenerationsläufe bringen mich wieder runter und lassen meine Muskeln
+          locker werden Die Normatec Lower Leg Boots sind so coole
+          Kompressionsstrümpfe, die man über die Waden zieht und die dann mit
+          Luftdruck die Muskeln massieren Ich finde es echt krass, wie gut das
+          funktioniert und es fühlt sich richtig angenehm an Zusätzlich mache
+          ich Dehnen und Mobility-Übungen nach dem Training damit meine Muskeln
+          geschmeidig bleiben Wechselduschen heiß-kalt regen die Durchblutung an
+          und helfen mir auch Ausreichend trinken besonders Wasser ist super
+          wichtig Leichte Massagen oder Foam Rolling lösen Verspannungen und ich
+          mache manchmal kurze Atemübungen oder Meditationen damit ich auch
+          mental wieder fit werde Mit all diesen Sachen fühle ich mich nach dem
+          Training schneller erholt und bin bereit für die nächste Einheit.
+        </p>
+      </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="links">
+        <!--Untertitel-->
+        <h3>
+          Hier unten finden Sie Links zu den verschiedenen Teams/ regenerations
+          Arten:
+        </h3>
+        <!--Liste mit externen Links welche auf die oben stehenden Texte bezogen sind.-->
+        <ul>
+          <li>
+            <a href="https://www.basel-basket-united.ch/">BaselBasketUnited</a>
+          </li>
+          <li>
+            <a href="https://tvmuttenz.basketball/home/"
+              >TV Muttenz Basketball</a
+            >
+          </li>
+          <li>
+            <a href="https://thenormatec.com/#characteristics">Normatec</a>
+          </li>
+        </ul>
+      </section>
+      <!--Bild link, der mit CSS verbunden ist, dmit ein bild im Hintergrund sein kann.-->
+      <section>
+        <img
+          scr="https://www.bing.com/images/search?view=detailV2&ccid=zdzi2gHL&id=07F52384A1DB5C796D4094A3F4357805E387A0A0&thid=OIP.zdzi2gHLt49qYHYXyWI-IwHaE7&mediaurl=https%3a%2f%2fcdn.pixabay.com%2fphoto%2f2022%2f11%2f22%2f20%2f25%2fball-7610545_1280.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.cddce2da01cbb78f6a607617c9623e23%3frik%3doKCH4wV4NfSjlA%26pid%3dImgRaw%26r%3d0&exph=853&expw=1280&q=basketball&FORM=IRPRST&ck=8C19D5E76157FFC6674A7573029E5E09&selectedIndex=1&itb=0"
+          alt=""
+          width="100%"
+        >
+      </section>
     </main>
+    <!--footer wird zur grid-area: footer zugeordnet, damit die ganze untere leiste nur footer ist und nicht mit main, etc. vermischt wird.-->
+    <footer style="grid-area: footer">Meine Hobbies</footer>
   </body>
 </html>

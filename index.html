@@ -5,37 +5,215 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eigene Webseite</title>
-
+    <!--wird dem CSS zugeordnet, damit schlussendlich die grid-wrapper funktionieren.-->
     <link rel="stylesheet" href="style.css">
+    <!--Hauptseite dem main.js zuordnen, damit der button funktioniert.-->
+    <script src="./main.js" defer></script>
   </head>
-
-  <body>
-    <header>
-      <h1>Webseite von ...</h1>
+  <!--body der class grid-wrapper zuordnen.-->
+  <body class="grid-wrapper">
+    <!--header zum style grid-area: header zordnen, bedeutet das der header ganz oben die ganze Zeile bekommt. -->
+    <header style="grid-area: header">
+      <!--Haupttitel-->
+      <h1>Webseite von Nando</h1>
+      <!--Butten, der mit createNewElement in main.js verbunden ist.-->
+      <button onclick="createNewElement()">click me</button>
     </header>
+    <!--Aside zu der grid area aside zuornen, damit ein Teil der linken seite nur für aside genutzt werden kann.-->
+    <aside>
+      <!--Navigationsleiste in aside.-->
+      <nav style="grid-area: aside">
+        <!--Navigationsleiste um zwischen den Unterseiten hin und her zu wechseln.-->
+        <ul class="navigation">
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <svg viewBox="0 0 24 24" class="icon" width="2rem">
+              <circle cx="12" cy="12" r="5"/>
+            </svg>
+            <a href="./unterseiten/übermich.html">Über mich</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <!--Zeichen um eine Hantel darzustellen-->
+            <svg viewBox="0 0 500 500" width="30px">
+              <rect x="-15" y="255" width="125" height="166" fill="red"/>
 
-    <main>
-      <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
-      </section>
+              <rect x="360" y="255" width="125" height="166" fill="red"/>
 
-      <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
+              <rect x="110" y="320" width="250" height="41" fill="black"/>
+            </svg>
+            <a href="./unterseiten/hobbies.html">Hobbies</a>
+          </li>
+          <!--Link für andere Unterseite.-->
+          <li class="nav-item">
+            <!--Pfeil darstellen im SVG-->
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
 
-      <section>
-        <h2>Unterseiten verlinken</h2>
+              <line
+                x1="350"
+                y1="200"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+              <line
+                x1="350"
+                y1="300"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="./unterseiten/freizeitbeschäftigungen.html"
+              >Freizeitbeschäftigungen</a
+            >
+            <!--Link für andere Unterseite.-->
+          </li>
+          <li class="nav-item">
+            <b>6</b>
+            <a href="./unterseiten/noten.html">Noten</a>
+          </li>
+        </ul>
+      </nav>
+      <!--Navigationsleiste, damit auf der Unterseite/ Hauptseite selbst hoch und runter springen kann.-->
+      <nav>
+        <ul>
+          <!--Definiert denn Titel als= Sections-->
+          <ol>
+            <h2>Sections</h2>
+          </ol>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#ich">Das bin ich</a>
+          </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#warum">Warum diese Webseite</a>
+          </li>
+          <!--Ist der Link, damit man auf die Sections gehen kann. -->
+          <li class="nav-item">
+            <svg width="30px" viewBox="0 0 500 500">
+              <line
+                x1="100"
+                y1="250"
+                x2="400"
+                y2="250"
+                stroke="red"
+                stroke-width="30"
+              />
+            </svg>
+            <a href="#hobbies"
+              >Meine Hobbies und andere Freizeitbeschäftigungen</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!--main wird damit zur grid-area: main zugeordnet. -->
+    <main style="grid-area: main">
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="ich">
+        <!--Untertitel-->
+        <h2>Das bin ich!</h2>
+        <!--Text-->
         <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
+          Ich bin Nando Musterman und lebe in der Grossregion Basel. Dort
+          besuche ich eines der umliegenden Gymnasien, wo ich täglich zur Schule
+          gehe und neue Dinge lerne. Ich bin 16 Jahre alt und wurde im Jahr 2009
+          geboren. Zurzeit befinde ich mich mitten in meiner Schulzeit, in der
+          ich viele verschiedene Fächer habe und mich auf meine weitere Zukunft
+          vorbereite. Das Gymnasium stellt hohe Anforderungen, aber es bietet
+          mir auch viele Möglichkeiten, mein Wissen zu erweitern und meine
+          Interessen zu entdecken. In der Region Basel gefällt mir besonders die
+          Nähe zur Stadt, aber auch zur Natur, was den Alltag abwechslungsreich
+          macht.
         </p>
       </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="warum">
+        <!--Untertitel-->
+        <h2>Weshalb mache ich diese Website?</h2>
+        <!--Text-->
+        <p>
+          Diese Website dient als Grundlage für eine Projektarbeit im Schulfach
+          Informatik. Im Rahmen dieses Projekts arbeiten wir über einen längeren
+          Zeitraum hinweg an dieser Website und entwickeln sie Schritt für
+          Schritt weiter. Die Arbeit daran umfasst sowohl die Gestaltung als
+          auch die technische Umsetzung und den Inhalt der Seite. Wir arbeiten
+          an dieser Website bis kurz vor die Weihnachtsferien. Anschließend wird
+          das Projekt abgegeben und von der Lehrperson bewertet. Auf Basis des
+          Inhalts, der Funktionalität und der Gestaltung der Website entsteht
+          dann eine Note, die in das Fach Informatik einfließt. Dieser Text gibt
+          nur einen kleinen Einblick in den Grund, weshalb ich diese Website
+          erstelle. Ziel der Projektarbeit ist es, das im Unterricht Gelernte
+          praktisch anzuwenden, neue Fähigkeiten zu erlernen und selbstständig
+          an einem größeren Projekt zu arbeiten.
+        </p>
+        <!--Text-->
+        <p>
+          Das war ein ganz kleiner Einblick, zum grund weshalb ich diese Website
+          mache.
+        </p>
+      </section>
+      <!--Sections definieren mit (id=), damit der link von Navigationsleiste funktionieren kann.-->
+      <section id="hobbies">
+        <!--Untertitel-->
+        <h2>Meine Hobbies und andere Freizeitbeschäftigungen!</h2>
+        <!--Text-->
+        <p>
+          Unter dem blauen Link finden Sie weitere Informationen über meine
+          Hobbys und andere Freizeitbeschäftigungen, denen ich in meiner freien
+          Zeit nachgehe. Dort erfahren Sie mehr darüber, womit ich mich gerne
+          beschäftige und was mir neben der Schule Spaß macht. Meine Hobbys und
+          Freizeitaktivitäten geben einen guten Einblick in meine Interessen und
+          zeigen, wie ich meine Zeit außerhalb des Schulalltags verbringe.
+          <!--Links zu zwei Unterseiten.-->
+          <a href="./unterseiten/hobbies.html">Hobbies</a>
+          <a href="./unterseiten/freizeitbeschäftigungen.html"
+            >Freizeitbeschäftigungen</a
+          >
+        </p>
+      </section>
+      <!--Bild link, der mit CSS verbunden ist, dmit ein bild im Hintergrund sein kann.-->
+      <section>
+        <img
+          src="https://www.bing.com/images/search?view=detailV2&ccid=g2gGQwp3&id=6D1DF927A29C0E06AF4E4FE68B6E9E8FE22444B4&thid=OIP.g2gGQwp3dmg_wROlcZo-iwHaEP&mediaurl=https%3a%2f%2fimg.freepik.com%2fvektoren-premium%2fabstrakter-blauer-hintergrund-mit-linien_1109882-8541.jpg%3fsemt%3dais_hybrid&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.836806430a7776683fc113a5719a3e8b%3frik%3dtEQk4o%252bebovmTw%26pid%3dImgRaw%26r%3d0&exph=358&expw=626&q=webseiten+hintergr%c3%bcnde&FORM=IRPRST&ck=5D048FFD4F76D4EC3A75E20C453902A9&selectedIndex=3&itb=0"
+          alt=""
+          width="100%"
+        >
+      </section>
     </main>
-
-    <footer>Meine Webseite</footer>
+    <!--footer wird zur grid-area: footer zugeordnet, damit die ganze untere leiste nur footer ist und nicht mit main, etc. vermischt wird.-->
+    <footer style="grid-area: footer">Meine Webseite</footer>
   </body>
 </html>
